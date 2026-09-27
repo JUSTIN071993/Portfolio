@@ -1,0 +1,2 @@
+import {Link} from 'react-router-dom'
+export default function Legal(){return <main className="legal-page"><div className="legal-page__card"><Link to="/">← Home</Link><h1>Project inquiries</h1><p>Contact Justin Automation to discuss project scope, delivery, support and pricing. Specific project terms are agreed directly.</p><a href="mailto:justin.automationtech@gmail.com">justin.automationtech@gmail.com</a></div></main>}

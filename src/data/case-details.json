@@ -1,0 +1,229 @@
+{
+  "ai-facebook-messenger-assistant": {
+    "challenge": "Online businesses get flooded with the same repetitive questions — product details, shipping, ordering, store policies. Owners either burn hours replying manually or leave customers waiting, losing sales in the process.",
+    "features": [
+      "Webhook-triggered Messenger replies",
+      "Google Docs as the live knowledge base",
+      "LLM-generated contextual answers",
+      "Simple memory for conversational context",
+      "GET / POST branching with an If node",
+      "Filter node to keep only valid message events",
+      "HTTP Request node posting to the Messenger API",
+      "Zero-code content updates — just edit the doc"
+    ],
+    "images": [
+      {
+        "alt": "n8n Workflow",
+        "src": "https://jbern-automation.lovable.app/__l5e/assets-v1/9d8679f7-fce8-4f61-ae00-f6348a186607/n8n-fb-workflow.png"
+      }
+    ],
+    "outcomes": [
+      "Business Value",
+      "24/7 instant customer support",
+      "Consistent, on-brand answers every time",
+      "Owners freed from repetitive DM replies",
+      "Faster response times = more converted buyers",
+      "Knowledge base updated by editing a Google Doc — no workflow changes"
+    ],
+    "solution": "Built an AI-powered Facebook Messenger Assistant in n8n. Incoming messages hit a webhook, the AI agent pulls context from a Google Docs knowledge base (products, FAQs, ordering, shipping, policies), generates a contextual response with an LLM, and posts it straight back through the Facebook Messenger API — instantly, around the clock.",
+    "workflow": [
+      "Customer sends a message on Facebook Messenger",
+      "n8n receives the message via Webhook",
+      "AI Agent fetches the Google Docs knowledge base",
+      "LLM generates a contextual response from the retrieved info",
+      "HTTP Request sends the reply back through the Facebook Messenger API",
+      "Customer receives an instant, on-brand answer"
+    ]
+  },
+  "zapier-asana-crm-automation": {
+    "challenge": "The business ran its entire sales pipeline manually — creating client folders, chasing unresponsive leads, following up on quotes, sending onboarding docs, and remembering to re-engage past customers. Admin work was eating the team's day and leads were slipping through the cracks.",
+    "features": [
+      "Asana-triggered multi-path workflow",
+      "Automatic Google Drive folder creation per client",
+      "Auto-generated Asana project subtasks",
+      "Scheduled follow-ups for unresponsive leads",
+      "Quote reminder sequences",
+      "Onboarding emails with attached PDFs",
+      "Reply detection via Gmail filters",
+      "Personalised post-project recommendation emails"
+    ],
+    "images": [
+      {
+        "alt": "Zapier Workflow",
+        "src": "https://jbern-automation.lovable.app/__l5e/assets-v1/198e8442-1ebe-46a2-bd7b-abb6b647bd51/zapier-asana-workflow.png"
+      }
+    ],
+    "outcomes": [
+      "Business Value",
+      "Repetitive admin work eliminated",
+      "No lead or quote left un-followed",
+      "Every new client onboarded consistently",
+      "Long-term customer relationships nurtured on autopilot"
+    ],
+    "solution": "Built a 28-step Zapier automation triggered from Asana task stages. Each stage — Ready to Start, No Response, Quoted, Approved, Paid and Closed — routes down its own path: creating Google Drive folders, sending scheduled follow-ups, delivering onboarding docs, and firing personalised service recommendations after the project closes.",
+    "workflow": [
+      "Asana task updated → Zapier trigger fires",
+      "Zapier splits into paths based on the task's stage",
+      "Ready to Start: create Google Drive folder + Asana subtasks",
+      "No Response / Quoted: send scheduled Gmail follow-ups until the client replies",
+      "Approved: attach onboarding PDF from Drive and send welcome email",
+      "Paid and Closed: send personalised service recommendation emails based on the purchased service"
+    ]
+  },
+  "make-xero-asana-accounting-automation": {
+    "challenge": "Finance and ops teams were manually exporting Xero account transactions and attaching them to completed Asana project tasks. It was repetitive, error-prone, and forced constant switching between platforms just to close out a project cleanly.",
+    "features": [
+      "Asana 'task completed' trigger",
+      "Authenticated Xero API pull",
+      "Previous-calendar-year transaction scope",
+      "Google Sheets staging for row iteration",
+      "CSV formatted to match Xero's native export",
+      "Automatic Asana attachment upload",
+      "Self-cleaning sheet after each run",
+      "Runs every 15 minutes on schedule"
+    ],
+    "images": [
+      {
+        "alt": "Make.com Scenario",
+        "src": "https://jbern-automation.lovable.app/__l5e/assets-v1/081b9c1e-e07c-48ae-be89-4a05b01d1545/make-xero-asana-workflow.png"
+      }
+    ],
+    "outcomes": [
+      "Business Value",
+      "Manual Xero exports eliminated",
+      "Financial reports live on the project task itself",
+      "No more platform-switching to close out projects",
+      "Consistent, audit-ready accounting attachments"
+    ],
+    "solution": "Built a Make.com scenario that triggers when an Asana task is marked complete, authenticates with Xero, pulls the previous calendar year's transaction-level data, formats it into a CSV that mirrors Xero's native Account Transactions report, and uploads it straight back to the Asana task as an attachment.",
+    "workflow": [
+      "Make.com watches Asana for completed tasks",
+      "Xero API call retrieves account transactions for the previous calendar year",
+      "Router splits the flow: iterate rows and stage them in Google Sheets",
+      "Text aggregator formats the rows into a CSV matching Xero's report layout",
+      "Asana module uploads the CSV as an attachment on the completed task",
+      "Google Sheets range is cleared, ready for the next run"
+    ]
+  },
+  "ghl-lead-intake-automation": {
+    "challenge": "The business was drowning in raw form submissions with no way to tell hot buyers from tire-kickers. Sales reps wasted hours triaging, hot leads went cold, and follow-up was inconsistent — costing real revenue every week.",
+    "features": [
+      "Sub-90-second lead response",
+      "BANT scoring via Math Operation accumulation",
+      "Instant internal SMS alert on hot leads",
+      "Dedup detection for returning contacts",
+      "Conditional tagging across 4 BANT factors",
+      "Phone number validation before SMS",
+      "61-tag taxonomy across 10 categories",
+      "Automatic pipeline stage + task assignment"
+    ],
+    "images": [
+      {
+        "alt": "GoHighLevel Workflow",
+        "src": "https://jbern-automation.lovable.app/__l5e/assets-v1/b09d8c15-0918-4bd5-91ac-75e304772267/ghl-lead-intake-workflow.png"
+      }
+    ],
+    "outcomes": [
+      "Business Value",
+      "Hot leads reached while intent is still hot",
+      "Zero manual triage for the sales team",
+      "Consistent follow-up on every single lead",
+      "Clean, tagged CRM data for reporting and segmentation"
+    ],
+    "solution": "Built a GoHighLevel workflow that fires within 90 seconds of form submission. Math Operation accumulation scores each lead 0–100 across budget, timeline, decision-maker status, and service type. Hot leads (70+) trigger an instant internal SMS to the sales rep; warm leads enter a nurture sequence; cold leads drip slowly. Every contact is auto-tagged, pipelined, and assigned a task — no manual input.",
+    "workflow": [
+      "Prospect submits the contact form",
+      "Workflow fires within 90 seconds",
+      "BANT scoring accumulates 0–100 via Math Operations",
+      "Dedup check for returning leads",
+      "Conditional tagging across 4 BANT factors (61 tags / 10 categories)",
+      "Phone validation → hot leads (70+) SMS the rep instantly",
+      "Warm leads → nurture sequence · Cold leads → slow drip",
+      "Contact added to pipeline stage and task auto-assigned"
+    ]
+  },
+  "ghl-14-day-nurture-sequence": {
+    "challenge": "New roofing leads went cold within days. There was no consistent follow-up, no way to detect when a lead had already replied or booked, and no system for re-engaging leads who never took action — meaning marketing spend was leaking every week.",
+    "features": [
+      "7-message, 14-day multi-channel sequence",
+      "Full email + SMS copy written for every message",
+      "3 goal events for mid-sequence exits",
+      "Reply detection pauses sequence + alerts rep",
+      "9am–7pm send window in contact's timezone",
+      "Behavioral scoring for opens, clicks and replies",
+      "Cold → hot upgrade via engagement",
+      "Re-engagement path for unresponsive leads"
+    ],
+    "images": [
+      {
+        "alt": "GoHighLevel Workflow",
+        "src": "https://jbern-automation.lovable.app/__l5e/assets-v1/6a67de0a-2b18-46f4-93bc-ba0478038a6c/ghl-nurture-sequence-workflow.png"
+      }
+    ],
+    "outcomes": [
+      "Business Value",
+      "No lead left cold in the pipeline",
+      "Automated messages stop the moment a lead converts",
+      "Sales notified instantly on every reply",
+      "More booked appointments from the same lead volume"
+    ],
+    "solution": "Designed and built a complete 7-message, 14-day nurture sequence in GoHighLevel covering every stage of the buyer journey: Day 1 education, Day 3 case study social proof, Day 5 personal check-in SMS, Day 7 objection handling, Day 10 soft offer, and Day 14 honest urgency close. Three goal events exit the lead the instant they convert, reply detection pauses and alerts sales, and behavioral scoring lets engagement move leads from cold to hot.",
+    "workflow": [
+      "Lead enters the 14-day sequence",
+      "Day 1 — educational email",
+      "Day 3 — case study social proof",
+      "Day 5 — personal check-in SMS",
+      "Day 7 — objection-handling email",
+      "Day 10 — soft offer",
+      "Day 14 — honest urgency close",
+      "Goal events exit on appointment booked, deal closed, or SMS reply"
+    ]
+  },
+  "ghl-appointment-booking-automation": {
+    "challenge": "Prospects were booking calls and never showing up, and even more were abandoning the booking page mid-flow. Without automated confirmations, reminders, and recovery, the business was leaking revenue on both sides of the calendar.",
+    "features": [
+      "Instant booking confirmation (SMS + email)",
+      "Day-before, morning-of, and 2-hour reminders",
+      "No-show detection 30 min after start time",
+      "Automatic rebooking SMS on no-show",
+      "Calendar page abandonment tracking",
+      "Recovery SMS + email within 30 minutes",
+      "Lead score +20 on booking intent",
+      "Urgent internal tasks for the sales rep"
+    ],
+    "images": [
+      {
+        "alt": "Booking Confirmation & Reminders",
+        "src": "https://jbern-automation.lovable.app/__l5e/assets-v1/62de5be7-64c1-4213-ac37-0472936848e9/ghl-booking-confirmation-workflow.png"
+      },
+      {
+        "alt": "Abandoned Booking Recovery",
+        "src": "https://jbern-automation.lovable.app/__l5e/assets-v1/2daf5950-da56-4767-865f-b87676462ab1/ghl-abandoned-booking-workflow.png"
+      },
+      {
+        "alt": "No-Show Detection",
+        "src": "https://jbern-automation.lovable.app/__l5e/assets-v1/cc2db9a6-00a7-4586-9ac6-442684a40ae2/ghl-no-show-workflow.png"
+      },
+      {
+        "alt": "Booking Completed",
+        "src": "https://jbern-automation.lovable.app/__l5e/assets-v1/b21309a8-d685-4381-805c-1d4a6212206a/ghl-booking-completed-workflow.png"
+      }
+    ],
+    "outcomes": [
+      "Business Value",
+      "20–30% of abandoned bookings recovered",
+      "No-shows re-engaged automatically",
+      "Every appointment reminded across SMS and email",
+      "Sales team alerted the moment intent signals fire"
+    ],
+    "solution": "Built a complete appointment automation system in GoHighLevel combining two workflows. Booking Confirmation fires instantly on booking — personalised SMS + email, day-before reminder, morning-of message, and 2-hour heads-up, with no-show detection 30 minutes after start time that auto-sends a rebooking SMS and creates an urgent sales task. Abandoned Booking Recovery watches calendar page visits, and when no appointment is created within 30 minutes, fires a recovery SMS + email, bumps lead score +20, and creates an urgent call task.",
+    "workflow": [
+      "Prospect books → instant personalised SMS + confirmation email",
+      "Day-before reminder · morning-of message · 2-hour heads-up",
+      "30 min after start time → no-show detection fires rebooking SMS + urgent task",
+      "Separate flow: calendar page visit tracked as intent",
+      "30-min check — if no confirmed appointment, mark as abandoned",
+      "Recovery SMS + email sent, lead score +20, urgent call task assigned"
+    ]
+  }
+}

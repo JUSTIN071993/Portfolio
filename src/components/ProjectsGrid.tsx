@@ -1,0 +1,2 @@
+import PortfolioCards from './PortfolioCards'
+export default function ProjectsGrid(){return <section className="pgrid jb-page"><header className="pgrid__head"><span className="pgrid__eyebrow">Justin Automation</span><h1 className="pgrid__title">Systems that do the work.</h1><p className="pgrid__lede">Six automation builds across AI, CRM and business operations.</p></header><div className="home__glass jb-glass"><PortfolioCards /></div></section>}

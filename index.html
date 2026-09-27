@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Justin Automation — AI, CRM & Workflows</title>
+    <meta name="description" content="AI automation, CRM systems and workflow integrations that help businesses save time and grow revenue." />
+    <meta name="author" content="Justin Automation" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#F1EAD7" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="preload" as="image" href="/jbern-portrait.jpg" fetchpriority="high" media="(min-width: 1100px)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Justin Automation" />
+    <meta property="og:title" content="Justin Automation — AI, CRM & Workflows" />
+    <meta property="og:description" content="AI automation, CRM systems and workflow integrations that help businesses save time and grow revenue." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function () {
+        try {
+          document.documentElement.dataset.theme =
+            localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
+        } catch (e) {
+          document.documentElement.dataset.theme = 'light';
+        }
+        if (document.documentElement.dataset.theme === 'dark') {
+          var bar = document.querySelector('meta[name="theme-color"]');
+          if (bar) bar.setAttribute('content', '#2D3021');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
